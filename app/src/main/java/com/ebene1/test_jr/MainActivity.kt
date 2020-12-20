@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         setupKategorien()
         //vefsefs
         //android Studio funktioniert
+        //gucken ob pull funktioniert
 
     }
     private fun setupKategorien(){
