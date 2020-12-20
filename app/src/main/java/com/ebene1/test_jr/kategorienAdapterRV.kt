@@ -9,9 +9,9 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import java.util.*
 
-class kategorienAdapterRV(val items: ArrayList<Timer_Categories>, val context: Context) : RecyclerView.Adapter<Timer_Categories.ViewHolder>(){
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Timer_Categories.ViewHolder {
-      return Viewholder(
+class kategorienAdapterRV(val items: ArrayList<TimerCategories>, val context: Context) : RecyclerView.Adapter<TimerCategories.ViewHolder>(){
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TimerCategories.ViewHolder {
+      return ViewHolder(
               LayoutInflater.from(context).inflate(
                       R.layout.layout_kategorien,
                       parent,
@@ -20,7 +20,7 @@ class kategorienAdapterRV(val items: ArrayList<Timer_Categories>, val context: C
       )
     }
 
-    override fun onBindViewHolder(holder: Timer_Categories.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: TimerCategories.Viewholder, position: Int) {
         
     }
 
