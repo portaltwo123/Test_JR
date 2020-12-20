@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setupKategorien()
         //vefsefs
-        //ok 
+        //android Studio funktioniert
 
     }
     private fun setupKategorien(){
