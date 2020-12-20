@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
     }
     private fun setupKategorien(){
-        kategorienRV.layoutManager = LinearLayout
+        kategorienRV.layoutManager = LinearLayout(this,)
     }
 
 }
