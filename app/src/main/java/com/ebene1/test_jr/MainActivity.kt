@@ -4,19 +4,24 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.LinearLayout
 import androidx.appcompat.widget.Toolbar
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.ebene1.test_jr.Constants_Kategorien.Companion.initializeCategories
 
+val kategorien = initializeCategories()
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val kategorien = initializeCategories()
+        setupKategorien()
 
 
 
     }
     private fun setupKategorien(){
-        kategorienRV.layoutManager = LinearLayout(this,)
+        val rView: RecyclerView = findViewById(R.id.kateorienRV)
+        rView.layoutManager = LinearLayoutManager(this)
+        rView.adapter = kategorienAdapterRV(kategorien,this)
     }
 
 }
