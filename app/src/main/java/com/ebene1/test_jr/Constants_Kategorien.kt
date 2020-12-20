@@ -4,19 +4,19 @@ class Constants_Kategorien {
 
     companion object{
 
-        fun initializeCategories() : ArrayList<Timer_Categories> {
+        fun initializeCategories() : ArrayList<TimerCategories> {
 
-            val kategorienListe = ArrayList<Timer_Categories>()
+            val kategorienListe = ArrayList<TimerCategories>()
 
-            val Kategorie1 = Timer_Categories(1, "Essen & Trinken", R.drawable.naruto, false)
+            val Kategorie1 = TimerCategories(1, "Essen & Trinken", R.drawable.naruto, false)
             kategorienListe.add(Kategorie1)
-            val Kategorie2 = Timer_Categories(2, "Sport", R.drawable.naruto, false)
+            val Kategorie2 = TimerCategories(2, "Sport", R.drawable.naruto, false)
             kategorienListe.add(Kategorie2)
-            val Kategorie3 = Timer_Categories(3, "Kaki", R.drawable.naruto, false)
+            val Kategorie3 = TimerCategories(3, "Kaki", R.drawable.naruto, false)
             kategorienListe.add(Kategorie3)
-            val Kategorie4 = Timer_Categories(4, "Minecraft PVP Training", R.drawable.naruto, false)
+            val Kategorie4 = TimerCategories(4, "Minecraft PVP Training", R.drawable.naruto, false)
             kategorienListe.add(Kategorie4)
-            val Kategorie5 = Timer_Categories(5, "Android Stdio Training", R.drawable.naruto, false)
+            val Kategorie5 = TimerCategories(5, "Android Stdio Training", R.drawable.naruto, false)
             kategorienListe.add(Kategorie5)
 
             return kategorienListe

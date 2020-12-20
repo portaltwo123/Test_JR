@@ -9,8 +9,9 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import java.util.*
 
-class kategorienAdapterRV(val items: ArrayList<TimerCategories>, val context: Context) : RecyclerView.Adapter<TimerCategories.ViewHolder>(){
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TimerCategories.ViewHolder {
+class kategorienAdapterRV(val items: ArrayList<TimerCategories>, val context: Context) : RecyclerView.Adapter<kategorienAdapterRV.ViewHolder>(){
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): kategorienAdapterRV.ViewHolder {
       return ViewHolder(
               LayoutInflater.from(context).inflate(
                       R.layout.layout_kategorien,
@@ -20,8 +21,11 @@ class kategorienAdapterRV(val items: ArrayList<TimerCategories>, val context: Co
       )
     }
 
-    override fun onBindViewHolder(holder: TimerCategories.Viewholder, position: Int) {
-        
+    override fun onBindViewHolder(holder: kategorienAdapterRV.ViewHolder, position: Int) {
+        val model: TimerCategories = items[position]
+
+        holder.imageView.setImageResource(model.getImage())
+        holder.nameCategory.text = model.getName()
     }
 
     override fun getItemCount(): Int {
