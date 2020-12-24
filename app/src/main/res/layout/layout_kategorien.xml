@@ -7,9 +7,12 @@
     android:layout_height="wrap_content"
     android:background="#37FFFFFF"
     android:backgroundTint="#2DFFFFFF"
-    android:padding="24dp"
-    app:cardCornerRadius="8dp"
-    app:cardElevation="4dp">
+    app:cardCornerRadius="4dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="15dp"
+    app:cardElevation="2dp">
 
     <RelativeLayout
         android:id="@+id/tvItem1"
