@@ -1,5 +1,9 @@
 package com.ebene1.test_jr
 
+import android.content.Intent
+import androidx.core.content.ContextCompat
+import androidx.core.content.ContextCompat.startActivity
+
 class Constants_Kategorien {
 
     companion object{
@@ -85,6 +89,7 @@ class Constants_Kategorien {
                     val kategorie5_5 = Timer(5, "Android Stdio Training", R.drawable.naruto, false, 60)
                     timerListe.add(kategorie5_5)
                 }
+
             }
 
             return timerListe
