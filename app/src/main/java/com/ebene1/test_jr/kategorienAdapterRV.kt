@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.ebene1.test_jr.Constants_Kategorien.Companion.initializeTimer
 import java.util.*
 
 class kategorienAdapterRV(val items: ArrayList<TimerCategories>, val context: Context) : RecyclerView.Adapter<kategorienAdapterRV.ViewHolder>(){
@@ -35,6 +36,13 @@ class kategorienAdapterRV(val items: ArrayList<TimerCategories>, val context: Co
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         val imageView :ImageView = itemView.findViewById(R.id.image)
         val nameCategory : TextView = itemView.findViewById(R.id.nameCategory)
+
+        init {
+            itemView.setOnClickListener {v: View ->
+                val position :Int = adapterPosition
+                initializeTimer(position)
+            }
+        }
     }
 
 }
