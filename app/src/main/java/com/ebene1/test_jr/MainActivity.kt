@@ -14,9 +14,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setupKategorien()
-        //vefsefs
-        //android Studio funktioniert
-        //gucken ob pull funktioniert
 
     }
     private fun setupKategorien(){
